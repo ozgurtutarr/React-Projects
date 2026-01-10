@@ -1,24 +1,13 @@
-import { useState } from 'react';
-import HelloWorld from './projects/001-hello-world/HelloWorld';
-import SimpleCounter from './projects/002-simple-counter/SimpleCounter';
+import { useState, Suspense } from 'react';
+import projects from './projectsConfig';
 
 function App() {
-  const [currentProject, setCurrentProject] = useState(null);
+  const [currentProjectId, setCurrentProjectId] = useState(null);
 
-  const renderProject = () => {
-    switch (currentProject) {
-      case 1:
-        return <HelloWorld />;
-      case 2:
-        return <SimpleCounter />;
-      default:
-        return (
-          <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            Select a project from the menu
-          </div>
-        );
-    }
-  };
+  const CurrentProjectData = projects.find((p) => p.id === currentProjectId);
+  const CurrentComponent = CurrentProjectData
+    ? CurrentProjectData.component
+    : null;
 
   return (
     <div style={{ display: 'flex', minHeight: '100vh' }}>
@@ -29,56 +18,57 @@ function App() {
           background: '#f0f0f0',
           padding: '20px',
           borderRight: '1px solid #ddd',
+          overflowY: 'auto',
+          height: '100vh',
+          position: 'sticky',
+          top: 0,
         }}
       >
         <h3>React 100 Projects</h3>
         <ul style={{ listStyle: 'none', padding: 0 }}>
-          <li>
-            <button
-              onClick={() => setCurrentProject(1)}
-              style={{
-                width: '100%',
-                textAlign: 'left',
-                padding: '10px',
-                marginBottom: '5px',
-                cursor: 'pointer',
-                background: currentProject === 1 ? '#ddd' : 'transparent',
-                border: 'none',
-              }}
-            >
-              1. Hello World
-            </button>
-          </li>
-          <li>
-            <button
-              onClick={() => setCurrentProject(2)}
-              style={{
-                width: '100%',
-                textAlign: 'left',
-                padding: '10px',
-                marginBottom: '5px',
-                cursor: 'pointer',
-                background: currentProject === 2 ? '#ddd' : 'transparent',
-                border: 'none',
-              }}
-            >
-              2. Simple Counter
-            </button>
-          </li>
+          {projects.map((project) => (
+            <li key={project.id}>
+              <button
+                onClick={() => setCurrentProjectId(project.id)}
+                style={{
+                  width: '100%',
+                  textAlign: 'left',
+                  padding: '10px',
+                  marginBottom: '5px',
+                  cursor: 'pointer',
+                  background:
+                    currentProjectId === project.id ? '#ddd' : 'transparent',
+                  border: 'none',
+                  borderRadius: '4px',
+                }}
+              >
+                {project.id}. {project.name}
+              </button>
+            </li>
+          ))}
         </ul>
       </div>
 
       {/* Main Content */}
       <div style={{ flex: 1, padding: '20px' }}>
-        {currentProject && (
-          <button
-            onClick={() => setCurrentProject(null)}
-            style={{ marginBottom: '20px' }}
-          >
-            ← Back to Home
-          </button>
+        {CurrentComponent ? (
+          <div>
+            <button
+              onClick={() => setCurrentProjectId(null)}
+              style={{ marginBottom: '20px' }}
+            >
+              ← Back to Home
+            </button>
+            <Suspense fallback={<div>Loading project...</div>}>
+              <CurrentComponent {...(CurrentProjectData.props || {})} />
+            </Suspense>
+          </div>
+        ) : (
+          <div style={{ textAlign: 'center', marginTop: '50px' }}>
+            <h2>Welcome to React 100 Projects!</h2>
+            <p>Select a project from the sidebar to view it.</p>
+          </div>
         )}
-        {renderProject()}
       </div>
     </div>
   );
