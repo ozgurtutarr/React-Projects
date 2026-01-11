@@ -31,6 +31,26 @@ const projects = [
     name: 'Color Toggler',
     component: lazy(() => import('./projects/004-color-toggler/ColorToggler')),
   },
+  {
+    id: 5,
+    name: 'List Renderer',
+    component: lazy(() => import('./projects/005-list-renderer/ListRenderer')),
+  },
+  {
+    id: 6,
+    name: 'Accordion',
+    component: lazy(() => import('./projects/006-accordion/Accordion')),
+  },
+  {
+    id: 7,
+    name: 'Image Slider',
+    component: lazy(() => import('./projects/007-image-slider/ImageSlider')),
+  },
+  {
+    id: 8,
+    name: 'Digital Clock',
+    component: lazy(() => import('./projects/008-digital-clock/DigitalClock')),
+  },
 ];
 
 export default projects;
