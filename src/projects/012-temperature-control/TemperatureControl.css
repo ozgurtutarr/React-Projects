@@ -1,0 +1,74 @@
+.temp-control-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+}
+
+.card-container {
+  width: 250px;
+  height: 350px;
+  background-color: #2b3240;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.temperature-display {
+  padding: 40px;
+  border-radius: 50%;
+  border: 3px solid white;
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.temperature-display.hot {
+  background-color: #ff5722;
+}
+
+.temperature-display.cold {
+  background-color: #03a9f4;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-container button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #444c5c;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.button-container button:hover {
+  background-color: #5c667a;
+}
+
+.button-container button:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,96 @@
+.todo-ls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fce4ec;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.todo-ls-form {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.todo-ls-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.todo-ls-form button {
+  padding: 12px 25px;
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.todo-ls-form button:hover {
+  background-color: #c2185b;
+}
+
+.todo-ls-list {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-ls-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: white;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+}
+
+.todo-ls-item span {
+  flex: 1;
+  cursor: pointer;
+}
+
+.todo-ls-item.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff5252;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 10px;
+  line-height: 1;
+}
+
+.delete-btn:hover {
+  color: #ff1744;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #999;
+}

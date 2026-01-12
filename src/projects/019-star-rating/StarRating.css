@@ -1,0 +1,50 @@
+.star-rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.stars button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s;
+}
+
+.stars button:hover {
+  transform: scale(1.1);
+}
+
+.star {
+  font-size: 3rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.on .star {
+  color: #f1c40f;
+}
+
+.off .star {
+  color: #7f8c8d;
+}
+
+.rating-text {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

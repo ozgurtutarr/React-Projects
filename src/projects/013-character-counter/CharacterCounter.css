@@ -1,0 +1,37 @@
+.char-counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #fce4ec;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.char-input {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  resize: vertical;
+  min-height: 150px;
+  font-family: inherit;
+}
+
+.char-input:focus {
+  outline: none;
+  border-color: #880e4f;
+  box-shadow: 0 0 5px rgba(136, 14, 79, 0.2);
+}
+
+.char-info {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #880e4f;
+}
