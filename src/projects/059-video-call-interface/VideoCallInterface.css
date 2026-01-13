@@ -1,0 +1,125 @@
+.video-call-container {
+  background-color: #202124;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video-call-container.ended {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.join-btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 20px;
+  flex: 1;
+}
+
+.video-card {
+  background-color: #3c4043;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-stream {
+  width: 100%;
+  height: 100%;
+}
+
+.participant-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.my-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #5f6368;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bdc1c6;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.participant-name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.call-controls {
+  padding: 20px;
+  background-color: #202124;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.control-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3c4043;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.control-btn:hover {
+  background-color: #555;
+}
+
+.control-btn.off {
+  background-color: #ea4335;
+  color: white;
+}
+
+.control-btn.end-call {
+  background-color: #ea4335;
+  width: 60px;
+}

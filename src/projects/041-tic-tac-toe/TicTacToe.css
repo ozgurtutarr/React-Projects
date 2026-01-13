@@ -1,0 +1,57 @@
+.ttt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.square {
+  background-color: white;
+  border: 2px solid #333;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.x-player {
+  color: #ff5252;
+}
+
+.o-player {
+  color: #448aff;
+}
+
+.reset-btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background-color: #555;
+}

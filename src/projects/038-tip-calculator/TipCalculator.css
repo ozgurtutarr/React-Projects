@@ -1,0 +1,66 @@
+.tip-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.tip-calculator {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.input-group input[type='number'] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+.input-group input[type='range'] {
+  width: 100%;
+  cursor: pointer;
+}
+
+.results {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.result-row:last-child {
+  margin-bottom: 0;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.highlight {
+  color: #007bff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}

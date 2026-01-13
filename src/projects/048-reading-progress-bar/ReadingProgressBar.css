@@ -1,0 +1,33 @@
+.rpb-container {
+  position: relative;
+}
+
+.progress-bar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: #f1f1f1;
+  z-index: 9999;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hint {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,38 @@
+.dnd-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.dnd-list {
+  width: 100%;
+  max-width: 400px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.dnd-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: grab;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dnd-item:active {
+  cursor: grabbing;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+}
+
+.drag-handle {
+  color: #aaa;
+  font-size: 1.5rem;
+}

@@ -1,0 +1,89 @@
+.pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+  transition: background-color 0.5s;
+  color: white;
+  min-height: 350px;
+}
+
+.pomodoro-container.work {
+  background-color: #d95550;
+}
+
+.pomodoro-container.break {
+  background-color: #4ca6a9;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.mode-buttons button {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.mode-buttons button.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border-color: transparent;
+}
+
+.timer-display {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+}
+
+.controls button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.1s;
+}
+
+.controls button:active {
+  transform: scale(0.98);
+}
+
+.main-btn {
+  background-color: white;
+  color: #333;
+  min-width: 120px;
+}
+
+.main-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.reset-btn {
+  background: none;
+  color: white;
+  border: 2px solid white;
+}
+
+.reset-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

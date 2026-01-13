@@ -1,0 +1,86 @@
+.converter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.converter-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.amount-input {
+  margin-bottom: 1.5rem;
+}
+
+.amount-input label,
+.select-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.amount-input input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.currency-selects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.select-group {
+  flex: 1;
+}
+
+.select-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.swap-icon {
+  margin: 0 15px;
+  font-size: 1.5rem;
+  color: #007bff;
+  padding-top: 20px;
+}
+
+.conversion-result {
+  text-align: center;
+  background-color: #e3f2fd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #1565c0;
+}
+
+.conversion-result h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.rate-info {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #999;
+}

@@ -1,0 +1,73 @@
+.memory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.memory-container button {
+  background: none;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #6200ea;
+  border: none;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card .front,
+.card .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card .front {
+  background-color: white;
+  transform: rotateY(180deg);
+  border: 2px solid #6200ea;
+}
+
+.card .back {
+  background-color: #6200ea;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
