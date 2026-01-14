@@ -1,0 +1,124 @@
+.snippet-manager-container {
+  display: flex;
+  gap: 30px;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .snippet-manager-container {
+    flex-direction: column;
+  }
+}
+
+.snippet-form-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  min-width: 300px;
+}
+
+.snippet-form-section h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.snippet-form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.snippet-form-section input,
+.snippet-form-section select,
+.snippet-form-section textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.snippet-form-section textarea {
+  min-height: 150px;
+  font-family: monospace;
+}
+
+.snippet-form-section button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.snippets-list {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.snippet-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.snippet-header {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.lang-tag {
+  background-color: #e9ecef;
+  color: #495057;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.snippet-header h4 {
+  margin: 0;
+  flex: 1;
+}
+
+.del-btn {
+  background: none;
+  border: none;
+  color: #ff5252;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.code-display {
+  padding: 15px;
+  margin: 0;
+  background-color: #282c34;
+  color: #abb2bf;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+/* Syntax Highlight Colors */
+.keyword {
+  color: #c678dd;
+}
+.string {
+  color: #98c379;
+}

@@ -373,6 +373,70 @@ const projects = [
       import('./projects/060-nested-comments/NestedComments')
     ),
   },
+  {
+    id: 61,
+    name: 'Notification System',
+    component: lazy(() =>
+      import('./projects/061-notification-system/NotificationSystem')
+    ),
+  },
+  {
+    id: 62,
+    name: 'Dashboard Layout',
+    component: lazy(() =>
+      import('./projects/062-dashboard-layout/DashboardLayout')
+    ),
+  },
+  {
+    id: 63,
+    name: 'Auth Flow (Mock)',
+    component: lazy(() => import('./projects/063-auth-flow-mock/AuthFlowMock')),
+  },
+  {
+    id: 64,
+    name: 'Virtual List',
+    component: lazy(() => import('./projects/064-virtual-list/VirtualList')),
+  },
+  {
+    id: 65,
+    name: 'Image Lazy Loading',
+    component: lazy(() =>
+      import('./projects/065-image-lazy-loading/ImageLazyLoading')
+    ),
+  },
+  {
+    id: 66,
+    name: 'Rich Text Editor',
+    component: lazy(() =>
+      import('./projects/066-rich-text-editor/RichTextEditor')
+    ),
+  },
+  {
+    id: 67,
+    name: 'Interactive Maps',
+    component: lazy(() =>
+      import('./projects/067-interactive-maps/InteractiveMaps')
+    ),
+  },
+  {
+    id: 68,
+    name: 'Drawing App',
+    component: lazy(() => import('./projects/068-drawing-app/DrawingApp')),
+  },
+  {
+    id: 69,
+    name: 'Code Snippet Manager',
+    component: lazy(() =>
+      import('./projects/069-code-snippet-manager/CodeSnippetManager')
+    ),
+  },
+  {
+    id: 70,
+    name: 'Typing Speed Test',
+    component: lazy(() =>
+      import('./projects/070-typing-speed-test/TypingSpeedTest')
+    ),
+  },
 ];
 
 export default projects;

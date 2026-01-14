@@ -1,0 +1,91 @@
+.typing-test-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stats-board {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.stat {
+  background: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stat .label {
+  display: block;
+  font-size: 0.9rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat .value {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-display {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-family: monospace;
+  text-align: left;
+  user-select: none;
+}
+
+.correct-char {
+  color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.incorrect-char {
+  color: #f44336;
+  background-color: #ffebee;
+  text-decoration: underline;
+}
+
+.typing-input {
+  width: 100%;
+  height: 100px;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-family: monospace;
+  resize: none;
+}
+
+.typing-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #0056b3;
+}
