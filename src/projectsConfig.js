@@ -437,6 +437,70 @@ const projects = [
       import('./projects/070-typing-speed-test/TypingSpeedTest')
     ),
   },
+  {
+    id: 71,
+    name: 'Undo/Redo Capability',
+    component: lazy(() =>
+      import('./projects/071-undo-redo-capability/UndoRedoCapability')
+    ),
+  },
+  {
+    id: 72,
+    name: 'Sudoku Solver',
+    component: lazy(() => import('./projects/072-sudoku-solver/SudokuSolver')),
+  },
+  {
+    id: 73,
+    name: '2048 Game',
+    component: lazy(() => import('./projects/073-2048-game/Game2048')),
+  },
+  {
+    id: 74,
+    name: 'Sorting Visualizer',
+    component: lazy(() =>
+      import('./projects/074-sorting-visualizer/SortingVisualizer')
+    ),
+  },
+  {
+    id: 75,
+    name: 'Pathfinding Visualizer',
+    component: lazy(() =>
+      import('./projects/075-pathfinding-visualizer/PathfindingVisualizer')
+    ),
+  },
+  {
+    id: 76,
+    name: 'Form Builder',
+    component: lazy(() => import('./projects/076-form-builder/FormBuilder')),
+  },
+  {
+    id: 77,
+    name: 'Spreadsheet (Mini)',
+    component: lazy(() =>
+      import('./projects/077-spreadsheet-mini/SpreadsheetMini')
+    ),
+  },
+  {
+    id: 78,
+    name: 'Timeline Component',
+    component: lazy(() =>
+      import('./projects/078-timeline-component/TimelineComponent')
+    ),
+  },
+  {
+    id: 79,
+    name: 'Calendar Scheduler',
+    component: lazy(() =>
+      import('./projects/079-calendar-scheduler/CalendarScheduler')
+    ),
+  },
+  {
+    id: 80,
+    name: 'Redux Toolkit Shopping Cart',
+    component: lazy(() =>
+      import('./projects/080-redux-toolkit-shopping-cart/ReduxShoppingCart')
+    ),
+  },
 ];
 
 export default projects;

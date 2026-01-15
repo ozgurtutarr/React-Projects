@@ -1,0 +1,85 @@
+.pathfinding-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.legend {
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+
+.legend-item {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.grid {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.grid-row {
+  display: flex;
+}
+
+.node {
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(175, 216, 248);
+  background-color: white;
+}
+
+.node-start {
+  background-color: green;
+}
+.node-end {
+  background-color: red;
+}
+.node-wall {
+  background-color: black;
+  animation: wallAnimation 0.3s ease-out;
+}
+.node-visited {
+  background-color: rgba(0, 190, 218, 0.75);
+  animation: visitedAnimation 0.5s ease-out;
+}
+.node-path {
+  background-color: gold;
+  animation: pathAnimation 0.5s ease-out;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 100%;
+  }
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(0, 190, 218, 0.75);
+  }
+}
+
+@keyframes wallAnimation {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pathAnimation {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

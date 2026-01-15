@@ -1,0 +1,76 @@
+.sudoku-container {
+  padding: 2rem;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sudoku-grid {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #333;
+  width: fit-content;
+  margin: 20px auto;
+}
+
+.sudoku-row {
+  display: flex;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.sudoku-cell:focus {
+  background-color: #e3f2fd;
+}
+
+/* 3x3 Grid Borders */
+.border-right {
+  border-right: 3px solid #333;
+}
+
+.border-bottom {
+  border-bottom: 3px solid #333;
+  margin-bottom: -1px; /* fix double border logic */
+  z-index: 1;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.solve-btn {
+  padding: 10px 25px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clear-btn {
+  padding: 10px 25px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status-msg {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: #333;
+}
