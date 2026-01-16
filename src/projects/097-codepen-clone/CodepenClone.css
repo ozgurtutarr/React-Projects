@@ -1,0 +1,105 @@
+.codepen-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1f26;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.cp-header {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #333;
+}
+
+.cp-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cp-save-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cp-editors {
+  height: 300px;
+  display: flex;
+  background-color: #131417;
+  border-bottom: 1px solid #333;
+}
+
+.cp-editor-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #333;
+}
+
+.cp-editor-col:last-child {
+  border-right: none;
+}
+
+.cp-label {
+  padding: 8px 12px;
+  background-color: #1e1f26;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.html-lbl {
+  border-top: 3px solid #e34c26;
+}
+.css-lbl {
+  border-top: 3px solid #2965f1;
+}
+.js-lbl {
+  border-top: 3px solid #f0db4f;
+}
+
+.cp-editor-col textarea {
+  flex: 1;
+  background-color: #131417;
+  color: #ccc;
+  border: none;
+  resize: none;
+  padding: 10px;
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  outline: none;
+}
+
+.cp-preview {
+  flex: 1;
+  background-color: white;
+  position: relative;
+}
+
+.cp-preview-bar {
+  background-color: #ddd;
+  color: #333;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.cp-preview iframe {
+  border: none;
+  display: block;
+}

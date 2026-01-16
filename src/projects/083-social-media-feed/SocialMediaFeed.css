@@ -1,0 +1,126 @@
+.social-feed-container {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.feed-header {
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Billabong', cursive; /* Instagram font mockup */
+}
+
+.feed-header h2 {
+  font-family: monospace; /* Fallback */
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.stories-rail {
+  background-color: white;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 15px 10px;
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+
+.story-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.avatar-placeholder {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  padding: 2px;
+  margin-bottom: 5px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+}
+
+.feed-scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+
+.post-card {
+  background-color: white;
+  margin-bottom: 15px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 10px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar-small {
+  width: 32px;
+  height: 32px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.post-content {
+  background-color: #eee;
+  height: 250px; /* Placeholder for image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px -10px; /* Bleed to edge */
+}
+
+.post-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  padding: 0;
+}
+
+.like-btn.active {
+  color: #ed4956;
+}
+
+.loading-spinner {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-style: italic;
+}

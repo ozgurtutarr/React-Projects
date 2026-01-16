@@ -501,6 +501,132 @@ const projects = [
       import('./projects/080-redux-toolkit-shopping-cart/ReduxShoppingCart')
     ),
   },
+  {
+    id: 81,
+    name: 'Netflix Clone',
+    component: lazy(() => import('./projects/081-netflix-clone/NetflixClone')),
+  },
+  {
+    id: 82,
+    name: 'Real-time Chat App',
+    component: lazy(() =>
+      import('./projects/082-real-time-chat-app/RealTimeChat')
+    ),
+  },
+  {
+    id: 83,
+    name: 'Social Media Feed',
+    component: lazy(() =>
+      import('./projects/083-social-media-feed/SocialMediaFeed')
+    ),
+  },
+  {
+    id: 84,
+    name: 'Task Management (Full Stack Mock)',
+    component: lazy(() =>
+      import('./projects/084-task-management-full-stack/TaskManagement')
+    ),
+  },
+  {
+    id: 85,
+    name: 'Blog Platform (Next.js Mock)',
+    component: lazy(() =>
+      import('./projects/085-blog-platform-nextjs-mock/BlogPlatform')
+    ),
+  },
+  {
+    id: 86,
+    name: 'Job Board',
+    component: lazy(() => import('./projects/086-job-board/JobBoard')),
+  },
+  {
+    id: 87,
+    name: 'Airbnb Clone',
+    component: lazy(() => import('./projects/087-airbnb-clone/AirbnbClone')),
+  },
+  {
+    id: 88,
+    name: 'Discord Clone (UI)',
+    component: lazy(() =>
+      import('./projects/088-discord-clone-ui/DiscordClone')
+    ),
+  },
+  {
+    id: 89,
+    name: 'E-commerce Platform',
+    component: lazy(() =>
+      import('./projects/089-e-commerce-platform/EcommercePlatform')
+    ),
+  },
+  {
+    id: 90,
+    name: 'Spotify Clone',
+    component: lazy(() => import('./projects/090-spotify-clone/SpotifyClone')),
+  },
+  {
+    id: 91,
+    name: 'Trello Clone',
+    component: lazy(() => import('./projects/091-trello-clone/TrelloClone')),
+  },
+  {
+    id: 92,
+    name: 'Video Streaming Mock',
+    component: lazy(() =>
+      import('./projects/092-video-streaming-mock/VideoStreamingMock')
+    ),
+  },
+  {
+    id: 93,
+    name: 'Google Docs Clone',
+    component: lazy(() =>
+      import('./projects/093-google-docs-clone/GoogleDocsClone')
+    ),
+  },
+  {
+    id: 94,
+    name: 'Zoom Clone (UI)',
+    component: lazy(() => import('./projects/094-zoom-clone-ui/ZoomCloneUI')),
+  },
+  {
+    id: 95,
+    name: 'Figma Clone (Basic)',
+    component: lazy(() =>
+      import('./projects/095-figma-clone-basic/FigmaCloneBasic')
+    ),
+  },
+  {
+    id: 96,
+    name: 'Survey Creator',
+    component: lazy(() =>
+      import('./projects/096-survey-creator/SurveyCreator')
+    ),
+  },
+  {
+    id: 97,
+    name: 'CodePen Clone',
+    component: lazy(() => import('./projects/097-codepen-clone/CodepenClone')),
+  },
+  {
+    id: 98,
+    name: 'Finance Dashboard',
+    component: lazy(() =>
+      import('./projects/098-finance-dashboard/FinanceDashboard')
+    ),
+  },
+  {
+    id: 99,
+    name: 'Admin Panel Charts',
+    component: lazy(() =>
+      import('./projects/099-admin-panel-charts/AdminPanelCharts')
+    ),
+  },
+  {
+    id: 100,
+    name: 'Final Project Showcase',
+    component: lazy(() =>
+      import('./projects/100-final-project-showcase/FinalProjectShowcase')
+    ),
+  },
 ];
 
 export default projects;

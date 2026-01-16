@@ -1,0 +1,320 @@
+.spotify-container {
+  height: 100vh;
+  background-color: #121212;
+  color: #b3b3b3;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Circular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+.spotify-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.spotify-sidebar {
+  width: 240px;
+  background-color: black;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.sidebar-menu,
+.sidebar-playlists {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li,
+.sidebar-playlists li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.sidebar-menu li:hover,
+.sidebar-playlists li:hover {
+  color: white;
+}
+
+.sidebar-menu li.active {
+  color: white;
+}
+
+.sidebar-divider {
+  height: 1px;
+  background-color: #282828;
+  margin: 10px 0 20px;
+}
+
+/* Main Main */
+.spotify-main {
+  flex: 1;
+  background: linear-gradient(180deg, #222222 0%, #121212 40%);
+  overflow-y: auto;
+  position: relative;
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* simplified */
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.header-nav-btns button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.user-pill {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.playlist-view {
+  padding: 20px 32px 100px;
+}
+
+.playlist-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.playlist-cover-lg {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  margin-right: 24px;
+}
+
+.playlist-info h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.playlist-info h1 {
+  font-size: 60px; /* Big title */
+  margin: 10px 0;
+  color: white;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.playlist-info p {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.track-row-header {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 60px;
+  border-bottom: 1px solid #282828;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.track-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 60px;
+  padding: 10px 0;
+  border-radius: 4px;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.track-row:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.track-row.current {
+  color: #1db954;
+}
+
+.track-title-col {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.track-title-col img {
+  width: 40px;
+  height: 40px;
+}
+
+.t-name {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.current .t-name {
+  color: #1db954;
+}
+
+.t-artist {
+  font-size: 13px;
+}
+
+/* Player Bar */
+.spotify-player {
+  height: 90px;
+  background-color: #181818;
+  border-top: 1px solid #282828;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.player-left img {
+  width: 56px;
+  height: 56px;
+  margin-right: 14px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.p-title {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.p-artist {
+  font-size: 11px;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 18px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.like-btn:hover {
+  color: white;
+}
+
+.player-center {
+  width: 40%;
+  text-align: center;
+}
+
+.player-controls {
+  margin-bottom: 8px;
+}
+
+.player-controls button {
+  background: none;
+  border: none;
+  color: #b3b3b3;
+  font-size: 14px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.player-controls button:hover {
+  color: white;
+}
+
+.player-controls .play-circle {
+  font-size: 32px;
+  color: white;
+  vertical-align: middle;
+}
+
+.player-controls .play-circle:hover {
+  transform: scale(1.1);
+}
+
+.progress-bar-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 11px;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  max-width: 400px;
+  height: 4px;
+  background-color: #535353;
+  border-radius: 2px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  background-color: white;
+  height: 100%;
+  border-radius: 2px;
+}
+
+.progress-bar-bg:hover .progress-bar-fill {
+  background-color: #1db954;
+}
+
+.player-right {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.vol-bar {
+  width: 90px;
+  height: 4px;
+  background-color: #535353;
+  border-radius: 2px;
+}

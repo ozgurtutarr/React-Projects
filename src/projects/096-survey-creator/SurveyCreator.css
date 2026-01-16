@@ -1,0 +1,173 @@
+.survey-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.survey-header {
+  background-color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.survey-header h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.preview-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.survey-workspace {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.toolbox {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+}
+
+.toolbox h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #555;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #666;
+}
+
+.form-control input,
+.form-control select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-btn {
+  width: 100%;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #27ae60;
+}
+
+.survey-canvas {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #999;
+  margin-top: 50px;
+}
+
+.question-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  position: relative;
+  border-left: 5px solid #3498db;
+}
+
+.q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.q-number {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.q-type-badge {
+  background-color: #eee;
+  color: #666;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.remove-btn:hover {
+  text-decoration: underline;
+}
+
+.question-card h3 {
+  margin: 0 0 20px;
+  color: #333;
+}
+
+.q-preview-area input,
+.q-preview-area textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  cursor: not-allowed;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  cursor: not-allowed;
+}
+
+.rating-stars {
+  font-size: 1.5rem;
+  color: #ccc;
+  cursor: not-allowed;
+}

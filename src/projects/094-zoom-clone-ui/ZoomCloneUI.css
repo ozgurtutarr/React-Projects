@@ -1,0 +1,157 @@
+.zoom-container {
+  background-color: #1a1a1a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.zoom-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-tile {
+  background-color: #2d2d2d;
+  height: 100%;
+  min-height: 250px;
+  border-radius: 8px;
+  position: relative;
+  border: 2px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-tile:hover {
+  border-color: #0e72ed;
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.camera-on-mock {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://via.placeholder.com/600x400?text=Camera+Feed');
+  background-size: cover;
+  background-position: center;
+  border-radius: 6px;
+}
+
+.name-tag {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 4px 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.mic-status-icon {
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font-size: 1rem;
+}
+
+/* Controls */
+.zoom-controls {
+  height: 80px;
+  background-color: #1a1a1a;
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.control-left,
+.control-center,
+.control-right {
+  display: flex;
+  align-items: center;
+}
+
+.control-center {
+  gap: 10px;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+  min-width: 80px;
+  border-radius: 8px;
+}
+
+.control-btn:hover {
+  background-color: #333;
+  color: white;
+}
+
+.control-btn.danger {
+  color: white;
+}
+.control-btn.danger .icon-lg {
+  color: white; /* Zoom typically keeps icon white or red, simplifed here */
+}
+
+.control-btn.success {
+  color: #00cc00;
+}
+
+.icon-lg {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.control-btn span {
+  font-size: 0.75rem;
+}
+
+.badge {
+  background-color: #666;
+  font-size: 0.7rem;
+  padding: 1px 4px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.end-btn {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.end-btn:hover {
+  background-color: #ff0000;
+}

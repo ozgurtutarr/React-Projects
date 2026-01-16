@@ -1,0 +1,101 @@
+.showcase-container {
+  min-height: 100vh;
+  background-color: #111;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.showcase-hero {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #222 0%, #000 100%);
+  text-align: center;
+  padding: 20px;
+}
+
+.showcase-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(#f00, #ff0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.showcase-hero p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.showcase-search input {
+  padding: 15px 30px;
+  width: 400px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1rem;
+  outline: none;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.project-thumb {
+  padding: 20px;
+  border-radius: 12px;
+  color: #222;
+  transition: transform 0.2s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-thumb:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+}
+
+.p-id {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.project-thumb h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.project-thumb p {
+  font-size: 0.8rem;
+  flex: 1;
+}
+
+.launch-btn {
+  align-self: flex-start;
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.showcase-footer {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  background-color: #000;
+  border-top: 1px solid #333;
+}

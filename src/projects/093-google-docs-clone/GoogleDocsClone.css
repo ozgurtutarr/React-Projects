@@ -1,0 +1,134 @@
+.docs-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f9fbfd;
+  font-family: Arial, sans-serif;
+}
+
+.docs-header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #dadce0;
+}
+
+.docs-logo {
+  font-size: 2rem;
+  color: #4285f4;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.docs-meta {
+  flex: 1;
+}
+
+.docs-title-input {
+  border: none;
+  font-size: 1.1rem;
+  padding: 2px 5px;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.docs-title-input:hover {
+  border: 1px solid #dadce0;
+}
+
+.docs-title-input:focus {
+  border: 2px solid #4285f4;
+  outline: none;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #5f6368;
+  margin-top: 4px;
+}
+
+.menu-bar span {
+  cursor: pointer;
+}
+
+.menu-bar span:hover {
+  color: #202124;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.share-btn {
+  background-color: #1a73e8;
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.user-icon-small {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: purple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.toolbar {
+  background-color: #edf2fa;
+  border-radius: 20px;
+  margin: 10px 15px;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.toolbar button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.separator {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.editor-bg {
+  flex: 1;
+  background-color: #f9fbfd;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.docs-page {
+  background-color: white;
+  width: 816px; /* Approx A4 width */
+  min-height: 1056px; /* Approx A4 height at 96dpi */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  padding: 72px; /* Approx 1 inch margins */
+  outline: none;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #262626;
+}
