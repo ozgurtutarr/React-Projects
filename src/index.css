@@ -1,3 +1,50 @@
+:root {
+  /* Light Theme (Default) */
+  --bg-body: #f8f9fa;
+  --bg-sidebar: #ffffff;
+  --bg-card: #ffffff;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --border-color: #e9ecef;
+  --border-active: #000000;
+  --accent-color: #2563eb;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  --btn-hover: #f1f3f5;
+  --btn-active: #eff6ff;
+}
+
+.dark {
+  /* Dark Theme Overrides */
+  --bg-body: #121212;
+  --bg-sidebar: #1e1e1e;
+  --bg-card: #252525;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+  --border-color: #333333;
+  --border-active: #ffffff;
+  --accent-color: #60a5fa;
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --btn-hover: #2a2a2a;
+  --btn-active: #1e3a8a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
 /* Reset some basics */
 button {
   cursor: pointer;

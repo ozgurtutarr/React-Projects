@@ -1,22 +1,12 @@
 import { useState } from 'react';
-// We are mimicking fetching the config, but in a real app we might import it.
-// For this standalone component, we will rely on a mock list for the showcase to avoid circular dependency complex logic.
-// However, since we are inside the app, we can just filter the IDs.
+import projects from '../../projectsConfig';
 import './FinalProjectShowcase.css';
 
-const FinalProjectShowcase = () => {
-  // Generate 100 items mock for showcase
-  const projects = Array.from({ length: 99 }, (_, i) => ({
-    id: i + 1,
-    title: `Project ${i + 1}`,
-    desc: `Description for project ${i + 1}`,
-    color: `hsl(${Math.random() * 360}, 70%, 80%)`,
-  }));
-
+const FinalProjectShowcase = ({ onLaunchProject }) => {
   const [search, setSearch] = useState('');
 
   const filtered = projects.filter((p) =>
-    p.title.toLowerCase().includes(search.toLowerCase())
+    p.name.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
@@ -36,15 +26,16 @@ const FinalProjectShowcase = () => {
 
       <div className="showcase-grid">
         {filtered.map((p) => (
-          <div
-            key={p.id}
-            className="project-thumb"
-            style={{ backgroundColor: p.color }}
-          >
+          <div key={p.id} className="project-thumb">
             <span className="p-id">#{p.id}</span>
-            <h3>{p.title}</h3>
-            <p>{p.desc}</p>
-            <button className="launch-btn">Launch 🚀</button>
+            <h3>{p.name}</h3>
+            <p>Click to launch this project</p>
+            <button
+              className="launch-btn"
+              onClick={() => onLaunchProject && onLaunchProject(p.id)}
+            >
+              Launch 🚀
+            </button>
           </div>
         ))}
       </div>
